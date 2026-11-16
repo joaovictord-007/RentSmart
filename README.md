@@ -1,12 +1,12 @@
-# RentSmart — Sistema de Orçamento de Locação
+ RentSmart — Sistema de Orçamento de Locação
 
 Projeto acadêmico em Python para calcular orçamentos de locação da R.M Imóveis usando Programação Orientada a Objetos (POO).
 
-## Requisitos
+Requisitos
 - Python 3.9 ou superior
 - Nenhuma biblioteca externa é necessária.
 
-## Como executar
+Como executar
 1. Baixe ou clone este repositório.
 2. Abra o terminal na pasta do projeto.
 3. Execute:
@@ -17,7 +17,7 @@ python rentsmart.py
 
 No Windows, se o comando `python` não funcionar, tente `py rentsmart.py`.
 
-## Funcionalidades
+Funcionalidades
 - Seleção de apartamento, casa ou estúdio.
 - Adicional por segundo quarto em apartamento ou casa.
 - Adicional de garagem para casas e apartamentos.
@@ -28,7 +28,7 @@ No Windows, se o comando `python` não funcionar, tente `py rentsmart.py`.
 - Resumo detalhado do orçamento.
 - Geração de `projecao_rentsmart.csv` com 12 meses de projeção.
 
-## Regras implementadas
+Valores
 - Apartamento de 1 quarto: R$ 700,00.
 - Apartamento de 2 quartos: R$ 700,00 + R$ 200,00.
 - Casa de 1 quarto: R$ 900,00.
@@ -39,15 +39,13 @@ No Windows, se o comando `python` não funcionar, tente `py rentsmart.py`.
 - Apartamento sem crianças: desconto de 5% sobre o aluguel após adicionais.
 - Taxa contratual: R$ 2.000,00, parcelada em 1 a 5 parcelas.
 
-## Estrutura de classes
+Estrutura de classes
 - `Imovel`: classe-base com categoria e aluguel-base.
 - `Apartamento`, `Casa`, `Estudio`: especializações que implementam as regras específicas.
 - `Orcamento`: guarda os valores calculados e apresenta o resumo.
 - `CalculadoraOrcamento`: coleta e valida os dados e coordena o cálculo.
 
-## Arquivos
+ Arquivos
 - `rentsmart.py`: aplicação principal.
 - `projecao_rentsmart.csv`: arquivo gerado após o cálculo de um orçamento.
 
-## Observação
-O CSV representa os valores previstos para os 12 meses. A taxa contratual é apresentada separadamente e deixa de ser cobrada quando todas as parcelas forem pagas. O projeto não inclui banco de dados nem interface gráfica, pois não são exigidos no enunciado.
